@@ -178,8 +178,7 @@ function esPositivo(numero) {
     return "Es positivo"; }
   if (numero < 0) {
      return "Es negarivo"; }
-  if (numero === 0) { 
-     return false }
+  else { return false }
  }
 
 function agregarSimboloExclamacion(str) {
