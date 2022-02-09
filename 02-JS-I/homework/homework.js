@@ -175,11 +175,11 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero > 0) {
-    return "es positivo"; }
+    return "Es positivo"; }
   if (numero < 0) {
-     return "es negarivo"; }
+     return "Es negarivo"; }
   else (numero === 0); {
-     return false;}
+     return false }
  }
 
 function agregarSimboloExclamacion(str) {
