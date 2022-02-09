@@ -174,9 +174,12 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) return "es positivo";
-  if (numero < 0) return "es negarivo";
-  return false;
+  if (numero > 0) {
+    return "es positivo"; }
+  if (numero < 0) {
+     return "es negarivo"; }
+  else (numero === 0); {
+     return false;}
  }
 
 function agregarSimboloExclamacion(str) {
@@ -238,7 +241,8 @@ function esVocal(letra){
   //Escribe tu código aquí 
   if (letra.length > 1) {
     return "Dato incorrecto"; 
-  } if (letra === a || letra === e || letra === i || letra === o || letra === u) {
+  } 
+  else (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"); {
     return "Es vocal";
   }
  return "Dato incorrecto";
