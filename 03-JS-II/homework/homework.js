@@ -153,9 +153,9 @@ function esPrimo(numero) {
   if (numero % 1 === 0 || numero % numero === 0){
     return true; }
   if (numero === 0 || numero === 1){ 
-    return falso ; }
+    return false ; }
   for (i > 2 ; i >numero; i++) {
-    if (numero % i === 0) return falso; 
+    if (numero % i === 0) return false; 
  }
 
 }
@@ -174,9 +174,11 @@ function tablaDelSeis(numero){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  for (var i = 6; i <= 60; i++ ) {
-    if (numero % 6 === 0); 
+  var tabladel6 = []
+  for (var i = 0; i <= 10; i++ ) {
+    tabladel6.push(1*6) 
   }
+  return tabladel6 
 }
 
 function tieneTresDigitos(numero){
@@ -184,7 +186,8 @@ function tieneTresDigitos(numero){
   //Escribe tu código aquí
   if (numero.length === 3) {
     return true }
-  else {return false} 
+  else (numero.length >3 || numero <3); {
+    return false} 
 }
 
 function doWhile(numero) {
