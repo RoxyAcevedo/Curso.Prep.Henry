@@ -152,7 +152,7 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
   if (numero === 0 || numero === 1){ 
     return false; }
-  for (var i = 2; i > 2 ; i++) {
+  for (vari === 2; i < numero; i++) {
     if (numero % i === 0) {
       return false}  
   if (numero % 1 === 0 || numero % numero === 0){
@@ -191,11 +191,12 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var i=0;  
-  while (i<=40) {
-    return (i) 
-    i = i + 5;
-  }
+  var i = 0;  
+  do {
+    numero = numero + 5;
+    i = i + 1; }
+  while (i < 8); 
+    return numero; 
 }
 
 
@@ -217,5 +218,5 @@ module.exports = {
   esVerdadero,
   tablaDelSeis,
   tieneTresDigitos,
-  doWhile
-};
+  doWhile,
+ };}
