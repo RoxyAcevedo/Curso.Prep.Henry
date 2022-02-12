@@ -155,9 +155,9 @@ function esPrimo(numero) {
   if (numero === 0 || numero === 1){ 
     return false ; }
   for (i > 2 ; i >numero; i++) {
-    if (numero % i === 0) return false; 
- }
-
+    if (numero % i === 0) {return false; 
+  }
+}
 }
 
 function esVerdadero(valor){
@@ -184,11 +184,8 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero >= 100) {
-    return true}
-  else (numero <= 99 || numero >= 1000); {
-    return false 
-  }
+  if (numero >99 && numero <1000) {return true}
+  else {return false}
 }
 
 function doWhile(numero) {
