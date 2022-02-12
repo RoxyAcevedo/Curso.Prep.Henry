@@ -152,11 +152,12 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
   if (numero === 0 || numero === 1){ 
     return false; }
-  for (vari === 2; i < numero; i++) {
+  for (var i = 2; i < numero; i++) {
     if (numero % i === 0) {
       return false}  
   if (numero % 1 === 0 || numero % numero === 0){
     return true; }
+}
 }
 
 function esVerdadero(valor){
@@ -219,4 +220,4 @@ module.exports = {
   tablaDelSeis,
   tieneTresDigitos,
   doWhile,
- };}
+ };
