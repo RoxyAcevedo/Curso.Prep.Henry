@@ -28,8 +28,9 @@ function incrementarPorUno(array) {
   // Tu código:
   var nuevoarray = [];
   for (var i= 0; i < array.legth; i++) {
-     return array[i] ; 
+     nuevoarray [i] = array[i] +1; 
   }
+  return nuevoarray;
 }
 
 
@@ -58,7 +59,6 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var array = [hello , world];
   return palabras.join ("");
 }
 
@@ -79,7 +79,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-
+  var suma = 0;
+  for (var i=0; i <array.length; i++) {
+    suma = suma + numeros[i];
+  }
+  return suma;
 }
 
 
