@@ -28,7 +28,7 @@ function incrementarPorUno(array) {
   // Tu código:
   var nuevoarray = [];
   for (var i= 0; i < array.legth; i++) {
-     array[i] + 1; 
+     return array[i] ; 
   }
 }
 
@@ -37,8 +37,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  var lista = [1, 2]; {
-  return array.push(4); } 
+  array [array.length] = elemento; 
+  return array; 
 }
 
 
@@ -47,8 +47,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  var lista = [1, 2]; {
-  return array.unshift(1); }
+  array.unshift (elemento);
+  return array; 
 }
 
 
@@ -58,8 +58,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var array = [hello , world]; {
-  return (array[0] + array[1] + ""); }
+  var array = [hello , world];
+  return palabras.join ("");
 }
 
 
@@ -67,6 +67,11 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for (var i = 0; i < array.length; i++ ) {
+    if (array[i] === elemento) {
+      return true; }
+  }
+  return false;
 }
 
 
@@ -74,6 +79,7 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+
 }
 
 
