@@ -154,10 +154,10 @@ function esPrimo(numero) {
     return false; }
   for (var i = 2; i < numero; i++) {
     if (numero % i === 0) {
-      return false}  
+      return false;}
+    }  
   if (numero % 1 === 0 || numero % numero === 0){
     return true; }
-}
 }
 
 function esVerdadero(valor){
