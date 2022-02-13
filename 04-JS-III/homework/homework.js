@@ -28,7 +28,7 @@ function incrementarPorUno(array) {
   // Tu código:
   var nuevoarray = [];
   for (var i= 0; i < array.legth; i++) {
-    nuevoarray[i] = array[i] + 1; 
+     array[i] + 1; 
   }
 }
 
@@ -37,7 +37,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array.push(4); 
+  var lista = [1, 2]; {
+  return array.push(4); } 
 }
 
 
@@ -46,7 +47,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  return array.unshift(1)
+  var lista = [1, 2]; {
+  return array.unshift(1); }
 }
 
 
@@ -56,8 +58,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var array = [hello , world]; 
-  return (array[0] + array[1] + "")
+  var array = [hello , world]; {
+  return (array[0] + array[1] + ""); }
 }
 
 
