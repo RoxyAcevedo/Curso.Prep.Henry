@@ -91,7 +91,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  return agregarnumeros(resultadostest) / resultadostest.length;
+  return agregarnumeros(resultadosTest) / resultadosTest.length;
 }
 
 
@@ -145,7 +145,7 @@ function diaDeLaSemana(numeroDeDia) {
     if (numeroDeDia === 1 || numeroDeDia === 7) {
       return "Es fin de semana" 
     } 
-    return "Es dia laboral";
+    return "Es dia Laboral";
   }  
 
 
@@ -157,7 +157,7 @@ function empiezaConNueve(n) {
   if (num.charat(0) === "9") {
     return true 
   } 
-  else return false
+  return false
 }
 
 
@@ -218,15 +218,15 @@ function breakStatement(numero) {
    var array = [];
    var suma = numero; 
    for (var i = 0; i < 10; i++){ 
-     suma = suma + 2
-     if (suma === i) {
-      break; }
-     else  {
-   array.push(suma) }
+     suma = suma + 2;
+     if (suma === i) break;
+     else {
+      array.push(suma) }
+   }
   if ( i > 10) {
     return "Se interrumpió la ejecución"
   }
-}
+  else {return array;}
 }
 
 
