@@ -26,8 +26,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var nuevoarray = [];
   for ( var i= 0; i < array.legth; i++) {
-     array [i] = array[i] + 1; 
+     nuevoarray [i] = array[i] + 1; 
   }
   return array;
 }
@@ -94,7 +95,7 @@ function promedioResultadosTest(resultadosTest) {
   for (i = 0; i < resultadosTest.length; i++ ) {
     return acumulador = acumulador + resultadosTest [i ]
   }
-  var promedio = acumulador / resultadostest.length 
+  var promedio = acumulador / resultadosTest.length 
     return promedio; 
 }
 
@@ -120,15 +121,11 @@ function multiplicarArgumentos() {
     if (arguments.length === 0){
       return 0;
     }
-    else if (arguments.length === 1) {
-      return arguments[0]
-    } 
-    else {
-      for (var i=0; i<arguments.length; i++) {
-        acumulador = arguments[i]
-      }
+    var total = 1;
+    for (var i=0; i<arguments.length; i++) {
+      total =total * arguments[i]; 
     }
-    return acumulador; 
+    return total; 
 }
 
 
@@ -137,7 +134,7 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   var contador = 0;
   for (var i = 0; i < arreglo.lengh; i++){
-    if (arreglo[i] > 18) {
+    if (arreglo[i] > 19) {
       contador = contador + 1 
     }
   }
@@ -150,19 +147,20 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  var dia = 0;
-  for (var i = 0; i < numeroDeDia.length; i++){
-    if (i === 1 || i === 7) {return "Es fin de semana"} 
+    if (numeroDeDia === 1 || numeroDeDia === 7) {return "Es fin de semana"} 
     else {return "Es dia laboral"}
-  } 
-} 
+  }  
 
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  var num = n.tostring()
+  if (num.charat(0) === "9") {
+    return true; 
+  } 
+  else return false;
 }
 
 
@@ -170,7 +168,13 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  
+  var todosIguales = arreglo [0]
+  for (var i = 0; i < arreglo.length; i++){
+    if (todosIguales === arreglo[i]){
+      return true;
+    } 
+  }
+    return false;
 } 
 
 
@@ -179,6 +183,13 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  var mesesDelAño = array [0]
+  var nuevoArray 
+  for (i = 0; i < array.length; i++){
+    if (nuevoArray === Enero || nuevoArray === Marzo || nuevoArray === Noviembre) {
+    return nuevoArray 
+    }
+  }  
 }
 
 
