@@ -27,7 +27,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var nuevoarray = [];
-  for ( var i= 0; i < array.legth; i++) {
+  for ( var i= 0; i < array.length; i++) {
      nuevoarray [i] = array[i] + 1; 
   }
   return nuevoarray;
@@ -91,7 +91,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  return agregarnumeros(resultadosTest) / resultadosTest.length;
+  return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
 
 
@@ -221,7 +221,7 @@ function breakStatement(numero) {
      suma = suma + 2;
      if (suma === i) break;
      else {
-      array.push(suma) }
+      array.push(suma); }
    }
   if ( i > 10) {
     return "Se interrumpió la ejecución"
@@ -237,7 +237,15 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-
+  var array = [];
+  var suma = numero;
+  for (var i = 0; i < 10; i++) {
+    if (i = 5) {continue; } 
+    else {suma = suma + 2; 
+    array.push(suma); 
+  }
+}
+  return array;
 }
 
 
