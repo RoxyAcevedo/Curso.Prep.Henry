@@ -244,7 +244,7 @@ function continueStatement(numero) {
     else {suma = suma + 2; 
     array.push(suma); 
   }
-}
+} 
   return array;
 }
 
