@@ -97,8 +97,8 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
-  usuario.nuevaPassword = nuevagPassword;
-    return usuario.nuevagPassword;
+  usuario.password = nuevaPassword;
+    return usuario;
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -116,10 +116,13 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  if(usuario.usuarios(esPremium)) {
-    return true; } 
-    return usuario.usuarios; 
-}
+  for (var i=o; i < usuarios.length; i++) {
+    usuarios [i].esPremium=true; 
+  } 
+  return usuarios;
+} 
+
+
 
 function sumarLikesDeUsuario(usuario) {
   // "usuario" tiene una propiedad llamada "posts" que es un array
@@ -128,7 +131,11 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-
+  var suma = usuario,posts;
+  for (var i=0; i< posts.length; i++) {
+    suma = suma + likes 
+  } 
+  return suma;
 }
 
 function agregarMetodoCalculoDescuento(producto) {
