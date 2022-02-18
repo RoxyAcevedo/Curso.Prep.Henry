@@ -150,7 +150,7 @@ function agregarMetodoCalculoDescuento(producto) {
   producto.calcularPrecioDescuento = function () {
     return this.precio - ( this.precio * this.porcentajeDescuento) ; 
   }; 
-    return producto.calcularpreciodescuento;
+    return producto;
 }
 
 // No modificar nada debajo de esta línea
