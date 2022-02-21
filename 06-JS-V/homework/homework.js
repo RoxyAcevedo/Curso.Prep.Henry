@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { stringify } = require("git-url-parse");
+
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
   // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
@@ -25,9 +27,9 @@ function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
-  Usuario.prototype.saludar = function () {
+  Constructor.prototype.saludar = function () {
     return "Hello Word!"; 
-  }
+  };
 }
 
 function agregarStringInvertida() {
@@ -36,9 +38,11 @@ function agregarStringInvertida() {
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
-  reverse = function () {
-    return (this.string.reverse()); 
+  var objeto=[];
+    for (var i=o; i<string.length; i++) {
+    return this.string.reverse;
   }
+
 }
 
 
