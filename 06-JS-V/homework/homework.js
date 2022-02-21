@@ -28,7 +28,7 @@ function agregarMetodoPrototype(Constructor) {
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
   Constructor.prototype.saludar = function () {
-    return "Hello Word!"; 
+    return "Hello World!"; 
   };
 }
 
@@ -38,11 +38,13 @@ function agregarStringInvertida() {
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
-  var objeto=[];
-    for (var i=o; i<string.length; i++) {
-    return this.string.reverse;
-  }
-
+  string.prototype.reverse = function () {
+    var stringInvertida = "";
+    for (var i=thislength - 1; i>0; i--) {
+      stringInvertida = stringInvertida + this.chatAt(i);
+    }
+    return stringInvertida;
+  };
 }
 
 
@@ -87,7 +89,7 @@ function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
   Persona.prototype.datos = function () {
-    return (this.nombre + "," + this.edad + "años"); 
+    return (this.nombre + "," + this.edad + "años" + " "); 
   }
 }
   
