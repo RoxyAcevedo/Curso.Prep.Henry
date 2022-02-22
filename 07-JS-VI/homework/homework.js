@@ -42,7 +42,7 @@ function forEach(array, cb) {
   //Tu código:
   const array = [];
   array.forEach(function (cb) {
-    return elemento;
+    return elemento; 
   }) 
 }
 
