@@ -58,7 +58,7 @@ function filter(array) {
   var nuevoArray = []; 
   for (let i=0; i<array.length; i++) {
     if(array[i][0] === "a") {
-      nuevoArrayArray.push(array[i])
+      nuevoArray.push(array[i])
     }
   } 
   return nuevoArray;
